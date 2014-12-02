@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+    <meta http-equiv="Content-Language" content="en">
+
+    <title>VideoJS Player Example</title>
+
+    <link href="http://vjs.zencdn.net/4.10/video-js.css" rel="stylesheet">
+
+    <script src="http://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://vjs.zencdn.net/4.10/video.js"></script>
+
+    <script type="text/javascript" src="js/videojs-media-sources.js"></script>
+    <script type="text/javascript" src="js/videojs.hls.min.js"></script>
+
+  </head>
+  <body>
+
+    <video id="really-cool-video" class="video-js vjs-default-skin" controls preload="auto" width="640" height="360" data-setup='{}'>
+      <!-- <source src="http://foodsound.qiniudn.com/video/introducing_thinglist.mp4" type='video/mp4'> -->
+      <source src="http://foodsound.qiniudn.com/video/hls/introducing_thinglist_240.m3u8" type='application/x-mpegURL' />
+      <!-- <source src="rtmp://xxxxx" type='rtmp/mp4' /> -->
+    </video>
+
+  </body>
+</html>
